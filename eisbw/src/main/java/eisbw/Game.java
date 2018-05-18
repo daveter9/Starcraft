@@ -68,6 +68,10 @@ public class Game {
 	public void startNewManager() {
 		this.env.addToEnvironment("manager" + (++this.managers), "manager");
 	}
+	
+	public void deleteManager(String unitName) {
+		this.env.deleteFromEnvironment(unitName);
+	}
 
 	public StarcraftEnvironmentImpl getEnvironment() {
 		return this.env;
